@@ -156,7 +156,7 @@ input, textarea, select, .uneditable-input {
    border: 1px solid #bbb;
    width: 100%;
    padding: 10px;
-   height: auto;
+   height: Auto;
    margin-bottom: 15px;
    @include box_sizing;
 }
@@ -174,17 +174,33 @@ input, textarea, select, .uneditable-input {
    @extend .error;
 }
 
-/* users index */
+/* microposts */
 
-.users {
-    list-style: none;
-    margin: 0;
-    li {
-         overflow: auto;
-         padding: 10px 0;
-         border-top: 1px solid $grayLighter;
-         &:last-child {
-               border-bottom: 1px solid $grayLighter;
-         }
-    }
+.microposts {
+   list-style: none;
+   margin: 10px 0 0 0;
+   li {
+      padding: 10px 0;
+      border-top: 1px solid #e8e8e8;
+   }
+}
+
+.content {
+   display: block;
+}
+
+.timestamp {
+   color: $grayLight;
+}
+
+.gravatar {
+   float: left;
+   margin-right: 10px;
+}
+
+aside {
+   textarea {
+       height: 100px;
+       margin-bottom: 5px;
+   }
 }

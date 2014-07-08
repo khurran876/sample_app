@@ -31,8 +31,8 @@ module SessionsHelper
      session[:return_to] = request.fullpath
   end
   
-  def current user?(user)
-     user == current user
+  def current_user?(user)
+     user == current_user
   end
 
 end
